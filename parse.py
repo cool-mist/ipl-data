@@ -1,7 +1,6 @@
 import tabula
 import json
 import sys
-import math
 
 class Match:
     day_n: int
