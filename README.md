@@ -20,4 +20,6 @@ Output is present in `2023/ipl-data-2023.json`
 
 ## Releases
 
+Download pre-built datasets from [releases](https://github.com/cool-mist/ipl-data/releases).
 
+- [2023](https://github.com/cool-mist/ipl-data/releases/tag/2023)
