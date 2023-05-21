@@ -11,6 +11,9 @@
 .ipl-data/bin/pip-compile: .ipl-data/bin/activate
 	.ipl-data/bin/python -m pip install pip-tools
 
+requirements.in:
+	echo "tabula-py" > requirements.in
+
 requirements.txt: requirements.in .ipl-data/bin/pip-compile
 	.ipl-data/bin/pip-compile --output-file=- > requirements.txt
 
@@ -22,4 +25,5 @@ clean:
 	rm -rf .ipl-data
 	rm -rf __pycache__
 	rm -rf requirements.txt
+	rm -rf requirements.in
 	rm -rf 2023/

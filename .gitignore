@@ -163,4 +163,5 @@ cython_debug/
 backup
 .ipl-data
 requirements.txt
+requirements.in
 2023
