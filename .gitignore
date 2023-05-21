@@ -3,3 +3,4 @@ backup
 requirements.txt
 requirements.in
 2023
+__pycache__
