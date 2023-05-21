@@ -1,4 +1,4 @@
-2023: .ipl-data/.c-install 2023/ipl-data-2023.pdf
+2023: .ipl-data/.c-install 2023/ipl-data-2023.pdf parse.py
 	.ipl-data/bin/python parse.py 2023/ipl-data-2023.pdf 2023/ipl-data-2023.json
 
 2023/ipl-data-2023.pdf:

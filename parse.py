@@ -1,6 +1,7 @@
 import tabula
 import json
 import sys
+import math
 
 class Match:
     day_n: int
@@ -33,15 +34,16 @@ def main():
             x.date = dataframe["Unnamed: 1"][i]
             x.time = dataframe["Unnamed: 2"][i]
             homeaway = dataframe["Unnamed: 3"][i]
-            home = ""
-            away = ""
-            for j in teams:
-                if homeaway.startswith(j):
-                    home = j
-                if homeaway.endswith(j):
-                    away = j
-            x.home = home
-            x.away = away
+            away = dataframe["Unnamed: 4"][i]
+            if away != away:
+                for j in teams:
+                    if homeaway.startswith(j):
+                        x.home = j
+                    if homeaway.endswith(j):
+                        x.away = j
+            else:
+                x.home = homeaway
+                x.away = away
             x.venue = dataframe["Unnamed: 5"][i]
             teams.append(x.home)
             matches.append(x)
